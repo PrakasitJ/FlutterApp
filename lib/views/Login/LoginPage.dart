@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'RoundPicture.dart';
-import 'LoginContainer.dart';
+import './LoginElements/LoginContainer.dart';
+import './LoginElements/RoundPicture.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -18,7 +18,9 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(height: 50,),
+                  SizedBox(
+                    height: 50,
+                  ),
                   Text(
                     "WorkOut",
                     style: TextStyle(
@@ -28,8 +30,10 @@ class LoginPage extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  RoundPicture(20, 100, "assets/images/LoginMuscle.png"),
-                  SizedBox(height: 40,),
+                  RoundPicture(300, 300, 20, "assets/images/LoginMuscle.png"),
+                  SizedBox(
+                    height: 40,
+                  ),
                   LoginContainer(),
                 ],
               ),
